@@ -1,29 +1,34 @@
-# Required to run your project under the correct environment.
 language: php
-
-# Versions of PHP you want your project run with.
+env:
+  global:
+  - secure: NdudjMHWEruGe9fCXy3WQfHVwCV/urPWiuyYTiWW644gnecm0UjwWkJRwQ9lHioEe3vFhOTzOl7XTthlVCj9Y/3OrivD42huw06DR9i9hxL8q3RfXZcdWbYaOOJAvZBbkyBd22gWDSvNedV+aYLfDIocpHfDPMT/7Q+rnh14/4VFaGsgfXWnZCNWycQILmkUQxl0ppPF3ktWQELqbB1QjNpPMd9N93pQ3s+df24MsWNGh3C7DWgEC+oQ4OZmjt8xYxNFQCnn9pxkJXBYQzk/L3L0Nc6WYhi7/ggeKDHweEHjLkkPRxnAYrttVTH95srE6w85PiHMB3/sDFzyVfxBQKTSG/zMp5XKnEdf6yyEPcSja3FrN2oV5LKusDbm3dwpqJSYcZFTTe2wWer8W7PFgBF/iEnew27s3yG0SUrzOYXH80OkGil/p3pxL7gp5BmXP4KZYX/ntxcSd8YP7sPh7YC5BvKHF8rZTq04x1y2ygC+hcYjdMTnOlxaG37TDFFMrRlJCsFmpuL/mZu+RBlk4FufjNmwBhcIzf9XItSqvyZXQlMEHEKOTYXBOWy8voCspZ6wK1IugDAPBaysRZaaUhS2/HIo7la3hkQcbweLtCf8BWp4/aV/t4iam8pzVdq9hAFL9hpoqDI5GYF0U7GVjhdycQCjpIkQA8U5I/aZ0FY=
+  - secure: v//IWufiSY7z0iq40XQoxoN+NjdGJRaAeWHk//Dv3N0GMRBe72hn7PT5Rasebxu3I6r8DF2cMdKuM9DidgSq8eHV/z/Llu5bkiLLbnOY/SwJCvImESOPLaGJY+khTXHVWsShrzWMqN2nXtpUOCt+9pRz0qYxN0v45f9qrYwv0sdj9sWD61WZtgIsbFo113ISIHtrAmgnHy4uxP4ZTDNqY5/ZRgPD+3RY0Trm+ZXeZYPAB/6b/yHmvthFt/9pM769CY+JVrNL0YF4I8LeKmmiQo4gun0S/iAgIeluQW5RFvnj4CXMIguH+RJr+q2zAPaP7g04h/yUrVr50+BBrJkQmb1Sv4Wy3l6UVF+o93WrfLbW2KMxbPPg4R3CvVogDMP2f5kFqvzwLkSqJ3BveWWceRFVaRT/pzRYItaZvIXRiRZfetRpPKX0HzMCx/hIIaoYH2dZua/rHOjIq37LvpG36n01O85IJxqPh6MQ9xfvJWzNfV/ri/gfDljn0wa8GFWnEf8ZevOl3imMb/r9v7cGeModb90qdOZA8tkyiXFvXBcia6BPovoxfDJw+IS1C/ziNpoyUPQkRXda/SKRWwuwOhd7JQIPBPzhpAx6fuT6p9D9EHkOnvJr7mPbwcHd3/FXTJFMiMJhS4TGFC3T7jhNjYj2X7K6cjgt+tT8lgvWZbY=
+  - secure: eQTDLBRr6Dxqff4bs+5n6bwLX/vVfvIk4zXrIPJUj9pfE48sVfoLoSf/1vkYYd29rvazLn9igOhldmcR/ZP0NgJhImBiVXaQ45f8AZMxcTVH+OLwlYxte+pY1fHMpJb+IXQTx7aYyCUVWVZBVj1L0Qlp7oK+j8Hib9vNyNNO6+VUD5D/uqVcxtVFHsfp+qwQGngJR0XC9sX54bA/t/T8a5SIxCrBJ4rawNl6j2kWuqr2uyUHbw9Isfx85yw1pgk1At62VpkMH3xppF3yBwd2on8RStFdLOD/VmYad9AeK+/3orO+l6xIun6JrzrT1MadRDEath/Fyk77PdiIy7HNXh0i+5eK5NFEMlANwlI3EZl8ycLwmQzhvvKkawyxS9P/yV7jXxMlQ1+xLyAdCR/S3In8fvGiwrehcKKKm3Nu/riG0manNd1FHqeeRNq4bXdPWplVdzIpMbL8PEune91KfWjccIlVI9lP0L9dU3P17jpEzyHc1a3q0vRdvFw5FmPRqII0byg4v36zN5g9o6MB5iA5/5nYGr4IEZ0GpzYFdNfx2ZPxaIUR4WneVoBzQUCU9nlPnmNQMXZT3eZMMNrb7kAPpvDMno7/0ttyrPdBDZhTdruj4aKVA66slHCw+/0lNLoag2eHkAuNZVfPZ3d3RcUq9/ojb/tY6l4g9pcT3mA=
+  - secure: J8w4Zg8pLrHTTt+sUJ9yENkgBc58z3OzdHp3YG/fuyKcVFAXoBkI1ObMtr5Faiug9OKdu9U0LbEXwkYIrf8gqXgHwvRgCdPDanY3krPj56k9ka+BF/EWFOGA9BSqgoQrImBm+TAZmJFX4iPIxJKzyeuQvvSfqDSgVFS3wnR6SFSSlTyDZ4O0hbFn0VCIF3NvLsRwgpHY9NaW2X4tFl0ldcaGiHyKGIBx+7qmGnkltuZxPcZ80Nv0aljNZ2cVvLSyI6oki4VOC2C4S+OJm2pb0vuCtjzPZDAcZ0BZsoUSxzXVMOmwUoZ3M7FXLUH7u2a0A7s1q+HH6QZ04wMqo5HU9bsAnScUzEfJ2hs9TiB3rUiflx+TprpO0zugofXLtm/JOYdv4vJ6HfSBTAK+HYGtqi9ZvVuaWMOhYdeFqPXQG2KZSVmml+UsQzEFMk22yqEo7Mh6ILhuxaZPv8zaW6cxFCA37vji3Ssyhwm6Z0IET7M/ZokcnaFp0caESlvhlBwS8p6TlNwawghX8ITsEk1PHrdMrK/IFgojAbpTGM6uEV7Xs3U49gD5DPFiq29ZVmTvikAp7zenmeLYeU29w+jp9bq54xNYGEipNYwIYbW7WU7TjRZUGFqc15HgxVb74z9LNsiyL6yREfIEDvocM7+zzgc3lrxH2srzOIaJUWZoeJs=
 php:
-  - '5.6'
-  - '7.0'
-  - hhvm
-
-# Commands to be run before your environment runs.
+- '5.6'
+- '7.0'
+- hhvm
 before_script:
-  - composer self-update
-  - composer install --prefer-source --no-interaction
-
-# Commands you want to run that will verify your build.
+- composer self-update
+- composer install --prefer-source --no-interaction
 script: phpunit
-
-# allow_failures: Allow this build to fail under the specified environments.
-# fast_finish: If your build fails do not continue trying to build, just stop.
 matrix:
   allow_failures:
-    - php: 5.6
-    - php: hhvm
+  - php: 5.6
+  - php: hhvm
   fast_finish: true
-
-# Customize when the notification emails are sent.
 notifications:
-    on_success: never
-    on_failure: always
+  on_success: never
+  on_failure: always
+addons:
+    apt:
+        packages:
+            - sshpass
+after_success:
+- composer install --no-dev -o
+- mkdir build
+- mv * build
+- tar -czf nutri-api.tgz build
+- export SSHPASS=$DEPLOY_PASS
+- sshpass -e scp nutri-api.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
