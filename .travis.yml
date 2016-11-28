@@ -20,9 +20,9 @@ addons:
     - sshpass
 after_success:
 - composer install --no-dev -o
-- mkdir build
-- mv * build
+- cd ..
 - BUILD_FILE=`date "+%Y%m%d_%H%M%S"`.tgz
-- tar -czf $BUILD_FILE build
+- echo $BUILD_FILE
+- tar -czf $BUILD_FILE laravel-nutri-api
 - export SSHPASS=$DEPLOY_PASS
 - sshpass -e scp $BUILD_FILE $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
