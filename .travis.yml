@@ -19,5 +19,5 @@ after_success:
 - composer install --no-dev -o
 - cd ..
 - BUILD_FILE=`date "+%Y%m%d_%H%M%S"`.tgz
-- tar -vczf $BUILD_FILE laravel-nutri-api
-- curl -T $BUILD_FILE -u $DEPLOY_USER:$DEPLOY_HOST $APP_PATH
+- tar -czf $BUILD_FILE laravel-nutri-api
+- curl -T $BUILD_FILE -u $DEPLOY_USER:$DEPLOY_PASS $APP_PATH
