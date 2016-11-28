@@ -23,6 +23,7 @@ after_success:
 - cd ..
 - BUILD_FILE=`date "+%Y%m%d_%H%M%S"`.tgz
 - echo $BUILD_FILE
-- tar -czf $BUILD_FILE laravel-nutri-api
+- tar -vczf $BUILD_FILE laravel-nutri-api
+- ls
 - export SSHPASS=$DEPLOY_PASS
-- sshpass -e scp $BUILD_FILE $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+- sshpass -e scp -v $BUILD_FILE $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
