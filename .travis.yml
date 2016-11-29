@@ -18,6 +18,8 @@ notifications:
 after_success:
 - composer install --no-dev -o
 - cd ..
-- BUILD_FILE=`date "+%Y%m%d_%H%M%S"`.tgz
-- tar -czf $BUILD_FILE laravel-nutri-api
+- BUILD_FOLDER=`date "+%Y%m%d_%H%M%S"`
+- BUILD_FILE=$BUILD_FOLDER.tgz
+- mv laravel-nutri-api $BUILD_FOLDER
+- tar -czf $BUILD_FILE $BUILD_FOLDER
 - curl -T $BUILD_FILE -u $DEPLOY_USER:$DEPLOY_PASS $APP_PATH
